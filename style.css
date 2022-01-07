@@ -1,0 +1,189 @@
+/*Universal Selector*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+/*my attempt at trying to make the scroll smooth*/
+html { 
+    scroll-behavior: smooth;
+}
+/*Header*/
+.header {
+    min-height: 80vh;
+    width: 100%;
+   background-image: url(https://wallpaperaccess.com/full/829012.jpg);
+   background-position: center;
+   background-size: cover;
+   position: relative;
+   padding-bottom: 100px;
+   
+}
+/*Navbar section*/
+nav{ 
+display: flex;
+padding: 2% 6%;
+justify-content: space-between;
+align-items: center;
+}
+/*navbar font info*/
+nav h1 {
+font-size: 60px;
+color: #fff;
+}
+/*nav link options*/
+.nav-links{
+flex: 1;
+text-align: right;
+}
+
+nav li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+nav li a {
+color: #fff;
+text-decoration: none;
+font-size: 30px;
+}
+/*makes nav links pretty*/
+.nav-links ul li::after{
+content: '';
+width: 0%;
+height: 2px;
+background: rgba(234, 235, 235, 0.349);
+display: block;
+margin: auto;
+transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+/*id attribute to a pic of me*/
+#pic-of-me{
+position: absolute;
+top: 15%;
+left: 35%;
+}
+
+/*class attribute to the about me section*/
+.about-me {
+ 
+    display: block;
+     width: 80%;
+     margin: auto;
+     text-align: left;
+     margin-top: 100px;
+     box-sizing: border-box;
+ }
+
+ .about-me h2 {
+     font-size: 35px;
+     padding-bottom: 10px;
+  
+ }
+ .about-me p {
+     font-size: 27px;
+ }
+
+/*class attribute to the portfolio section*/
+.Portfolio {
+    display: block;
+  text-align: center;
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    padding-top: 100px;
+    justify-content: space-between;
+}
+/*id of individual pic of portfolio selector*/
+#java {
+    margin: 30px;
+    float: left;
+    margin-top: 45px;
+    
+}
+/*when mouse is over the picture of java, picture is made bigger*/
+#java:hover {
+    position:relative;
+  
+    width:500px;
+    height:500px;
+    display:block;
+    z-index:999;
+}
+/*when mouse is over the picture of react, picture is made bigger*/
+
+#react:hover {
+    position:relative;
+
+    width:500px;
+    height:500px;
+    display:block;
+    z-index:999;
+}
+/*when mouse is over the picture of html, picture is made bigger*/
+
+#html:hover {
+    position:relative;
+  
+    width:500px;
+    height:500px;
+    display:block;
+    z-index:999;
+}
+/*id of individual pic of the react selector*/
+
+#react {
+    margin: 50px;
+    margin-left: 400px;
+
+}
+/*id of individual pic of html selector*/
+
+
+#html {
+    margin: 50px;
+    float: right;
+}
+
+/*portfolio font options*/
+.Portfolio h2{
+font-size: 35px;
+}
+
+
+/*Contact me section*/
+ .contact-me {
+   
+     display: block;
+     text-decoration: none;
+width: 80%;
+margin: auto;
+text-align: left;
+padding-top: 100px;
+margin-bottom: 20px;
+ }
+ .contact-me h2 {
+     text-align: center;
+ }
+
+ .contact-me li { 
+     list-style: none;
+     text-decoration: none;
+   text-align: center;
+   position: inline-block;
+   font-size: 25px;
+ }
+
+ .contact-me h2 {
+     font-size: 40px;
+     padding-bottom: 10px;
+ }
+
+
+
